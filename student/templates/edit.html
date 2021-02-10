@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>edit</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+<form method="post">
+                    {% csrf_token %}
+
+                    {{students.as_p}}
+
+                    <br>
+
+                    <button type="submit" class="btn btn-success p-6">Update</button>
+</form>
+</body>
+</html>
